@@ -2,10 +2,21 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+~/.config/polybar/launch.sh
+nm-applet 
+picom --config ~/.config/picom/picom.conf
+xidlehook --not-when-fullscreen --not-when-audio --timer 600 'betterlockscreen -l dimblur' ''
+nitrogen --restore
+/usr/bin/gnome-keyring-daemon --start --components=secrets
+
+## Tochpad Tapping and Natural Scrolling
+xinput --set-prop "DELL083C:00 04F3:3088 Touchpad" "libinput Tapping Enabled" 1
+xinput --set-prop "DELL083C:00 04F3:3088 Touchpad" "libinput Natural Scrolling Enabled" 1
+
+bspc monitor -d 1 2 3 4 5 6 7
 
 bspc config border_width         2
-bspc config window_gap          12
+bspc config window_gap          5
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
