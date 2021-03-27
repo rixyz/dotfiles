@@ -1,4 +1,4 @@
-source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/dotfiles/nvim/vim-plug/plugins.vim
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
