@@ -1,0 +1,12 @@
+configuration {
+      modi: "drun,window,run,ssh";
+    width: 30;
+    lines: 5;
+/*      columns: 1;*/
+    font: "FiraCode Nerd Font 13";
+/*      bw: 1;*/
+/*      location: 0;*/
+/*      padding: 5;*/
+    yoffset: -150;
+}
+@import "/home/rix/.local/share/rofi/themes/slate.rasi"
