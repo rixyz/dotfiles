@@ -14,5 +14,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " File Explorer
     Plug 'scrooloose/NERDTree'
-
+    Plug 'morhetz/gruvbox'
+    
 call plug#end()
