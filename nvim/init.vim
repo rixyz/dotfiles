@@ -175,3 +175,8 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 colorscheme gruvbox
+
+" Airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'gruvbox'
+let g:gruvbox_invert_selection=0

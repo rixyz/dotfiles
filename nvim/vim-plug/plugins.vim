@@ -16,4 +16,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     Plug 'morhetz/gruvbox'
     
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'ap/vim-css-color'                                                                                                    
+    Plug 'ryanoasis/vim-devicons'                                                                                              
+    Plug 'scrooloose/nerdcommenter'                                                                                            
+    Plug 'jiangmiao/auto-pairs'                                                                                                
+    Plug 'airblade/vim-gitgutter'
+
 call plug#end()
