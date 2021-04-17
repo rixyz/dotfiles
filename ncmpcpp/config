@@ -24,7 +24,7 @@
 ## MPD clients (eg. ncmpc) also use that location.
 ##
 #
-lyrics_directory = /media/E/Music/Lyrics/
+#lyrics_directory = /media/E/Music/Lyrics/
 #
 ##### connection settings #####
 #

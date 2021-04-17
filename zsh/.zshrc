@@ -14,8 +14,11 @@ zinit light zsh-users/zsh-history-substring-search
 
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
+autoload -U history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^[[A" history-beginning-search-backward-end
+bindkey "^[[B" history-beginning-search-forward-end
 
 alias icat='kitty +kitten icat'
 alias fonts="kitty + list-fonts --psnames"
@@ -52,7 +55,7 @@ export HISTTIMEFORMAT="[%F %T] "
 export MOZ_X11_EGL=1
 
 export XDG_CONFIG_HOME="$HOME/.config/"
-export MPD_HOST=$HOME/.config/mpd/socket
+#export MPD_HOST=$HOME/.config/mpd/socket
 
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.yarn/bin
