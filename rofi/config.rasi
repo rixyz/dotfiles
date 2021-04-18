@@ -9,4 +9,4 @@ configuration {
 /*      padding: 5;*/
     yoffset: -150;
 }
-@import "/home/rix/.local/share/rofi/themes/slate.rasi"
+@import "/home/rix/.config/rofi/themes/slate.rasi"
