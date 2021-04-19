@@ -180,3 +180,12 @@ colorscheme gruvbox
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'gruvbox'
 let g:gruvbox_invert_selection=0
+
+set clipboard+=unnamedplus
+" Copy to clipboard
+vnoremap  <leader>yy  "+yy
+
+" Paste from clipboard
+nnoremap <leader>p "+p
+
+:let mapleader="\\"
