@@ -23,5 +23,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/nerdcommenter'                                                                                            
     Plug 'jiangmiao/auto-pairs'                                                                                                
     Plug 'airblade/vim-gitgutter'
+    Plug 'tpope/vim-fugitive'
 
 call plug#end()

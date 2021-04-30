@@ -174,18 +174,17 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-colorscheme gruvbox
+nmap <leader>gh :diffget //3<CR>
+nmap <leader>gu :diffget //2<CR>
+set diffopt+=vertical
 
+colorscheme gruvbox
 " Airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'gruvbox'
 let g:gruvbox_invert_selection=0
 
-set clipboard+=unnamedplus
-" Copy to clipboard
-vnoremap  <leader>yy  "+yy
 
-" Paste from clipboard
-nnoremap <leader>p "+p
+set clipboard+=unnamedplus
 
 :let mapleader="\\"

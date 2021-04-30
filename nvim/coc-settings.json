@@ -1,5 +1,5 @@
 {
     "rpc.showProblems":false,
     "rpc.lowerDetailsEditing": "Working on {filename}",
-    "coc.preferences.formatOnSaveFiletypes": ["c"]
+    "coc.preferences.formatOnSaveFiletypes": ["c","html","css"]
 }
