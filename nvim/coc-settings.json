@@ -1,5 +1,6 @@
 {
     "rpc.showProblems":false,
     "rpc.lowerDetailsEditing": "Working on {filename}",
-    "coc.preferences.formatOnSaveFiletypes": ["c","html","css","js","markdown"]
+    "coc.preferences.formatOnSaveFiletypes": ["c","html","css","js","markdown"],
+    "rpc.buttonEnabled": false
 }
