@@ -68,6 +68,7 @@ export PATH=$PATH:$HOME/.local/bin/spicetify-cli
 export DEBUG=True
 export EDITOR='nvim'
 export _JAVA_AWT_WM_NonREPARENTING=1
+export _JAVA_AWT_WM_NONREPARENTING=1
 export WINIT_HIDPI_FACTOR=1.0
 #export MPD_HOST="localhost"
 
