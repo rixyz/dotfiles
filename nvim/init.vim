@@ -188,3 +188,5 @@ let g:gruvbox_invert_selection=0
 set clipboard+=unnamedplus
 set termguicolors
 :let mapleader="\\"
+
+let g:node_client_debug = 1

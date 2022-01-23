@@ -1,6 +1,19 @@
 {
-    "rpc.showProblems":false,
-    "rpc.lowerDetailsEditing": "Working on {filename}",
-    "coc.preferences.formatOnSaveFiletypes": ["c","html","css","js","markdown","javascript"],
-    "rpc.buttonEnabled": false
+  "rpc.showProblems": false,
+  "rpc.lowerDetailsEditing": "Working on {filename}",
+  "rpc.buttonEnabled": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "json",
+    "python",
+    "c",
+    "html",
+    "css",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "markdown",
+    "javascript"
+  ],
+  "eslint.packageManager": "yarn",
+  "eslint.alwaysShowStatus": true
 }
