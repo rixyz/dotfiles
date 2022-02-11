@@ -1,11 +1,9 @@
+#zmodload zsh/zprof
+
 source ~/.zinit/bin/zinit.zsh
 fpath=(/home/rix/.config/zsh/zsh-completions/src $fpath)
 
 # plugins
-#zinit ice pick'async.zsh' src'pure.zsh'
-#zinit light sindresorhus/pure
-#zinit light zsh-users/zsh-autosuggestions
-
 zinit wait lucid for \
     zsh-users/zsh-autosuggestions \
     zsh-users/zsh-completions \
@@ -23,7 +21,6 @@ bindkey  "^[[H"   beginning-of-line
 bindkey  "^[[F"   end-of-line
 bindkey  "^[[3~"  delete-char
 
-
 alias icat='kitty +kitten icat'
 alias fonts="kitty + list-fonts --psnames"
 
@@ -34,6 +31,7 @@ alias vim="nvim"
 alias monitor="xrandr -q | grep ' connected' | cut -d ' ' -f1 "
 alias rmorphan="sudo pacman -Rns $(pacman -Qtdq)"
 alias cleanpkgs="paru -c"
+alias ..='cd ..'
 
 alias history='history -10000'
 alias ls='lsd' #-Fh --color=always -v --group-directories-first'
@@ -59,23 +57,36 @@ export HISTTIMEFORMAT="[%F %T] "
 export MOZ_X11_EGL=1
 
 export XDG_CONFIG_HOME="$HOME/.config/"
-#export MPD_HOST=$HOME/.config/mpd/socket
 
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.yarn/bin
-export PATH=$PATH:$HOME/.local/bin/spicetify-cli
 
 export DEBUG=True
 export EDITOR='nvim'
 export _JAVA_AWT_WM_NonREPARENTING=1
 export _JAVA_AWT_WM_NONREPARENTING=1
 export WINIT_HIDPI_FACTOR=1.0
-#export MPD_HOST="localhost"
 
+#export MPD_HOST="localhost"
+#export MPD_HOST=$HOME/.config/mpd/socket
 
 # auto completion
+#autoload -Uz compinit
 autoload -U compinit
-compinit
+
+#for dump in ~/.zcompdump(N.mh+24); do
+#    compinit
+#done
+
+#compinit -C
+
+#zstyle ':completion:*' menu yes select
+
+#if [[ "${terminfo[kcbt]}" != "" ]]; then
+#  bindkey "${terminfo[kcbt]}" reverse-menu-complete   # [Shift-Tab] - move through the completion menu backwards
+#fi
+#autoload -U compinit
+#compinit
 #compdef _gnu_generic fd
 #zicompinit
 #zicdreplay
@@ -103,3 +114,5 @@ compinit
 
 #pfetch
 eval "$(starship init zsh)"
+
+#zprof
