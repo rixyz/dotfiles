@@ -67,52 +67,11 @@ export _JAVA_AWT_WM_NonREPARENTING=1
 export _JAVA_AWT_WM_NONREPARENTING=1
 export WINIT_HIDPI_FACTOR=1.0
 
-#export MPD_HOST="localhost"
-#export MPD_HOST=$HOME/.config/mpd/socket
-
 # auto completion
 #autoload -Uz compinit
 autoload -U compinit
+compinit
 
-#for dump in ~/.zcompdump(N.mh+24); do
-#    compinit
-#done
-
-#compinit -C
-
-#zstyle ':completion:*' menu yes select
-
-#if [[ "${terminfo[kcbt]}" != "" ]]; then
-#  bindkey "${terminfo[kcbt]}" reverse-menu-complete   # [Shift-Tab] - move through the completion menu backwards
-#fi
-#autoload -U compinit
-#compinit
-#compdef _gnu_generic fd
-#zicompinit
-#zicdreplay
-#zinit cdreplay -q 
-
-#zstyle ':completion:*' menu select
-#zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-#zmodload zsh/complist
-
-# workon() {
-#    [ -z "$PROJECT_HOME" ] && {
-#        unset -f workon;
-#        export WORKON_HOME="$HOME/.virtualenvs/"
-#        export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
-#        source "$HOME/.local/bin/virtualenvwrapper.sh"
-#    }
-#  workon "$@"
-#}
-
-
-#[ -f ~/.zinit/plugins/.fzf.zsh ] && source ~/.zinit/plugins/.fzf.zsh
-#export FZF_DEFAULT_OPS='--extended'
-#export FZF_DEFAULT_COMMAND="rg --files --no-ignore-vcs --hidden --follow -g '!node_modules/' -g '!.git' -g '!__pycache__'"
-#export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
-
-#pfetch
 eval "$(starship init zsh)"
 
 #zprof
